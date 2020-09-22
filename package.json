@@ -1,6 +1,7 @@
 {
   "name": "2 Brackets & Co.",
   "version": "0.0.0",
+  "author": "2 Brackets & Co.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
