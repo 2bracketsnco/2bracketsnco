@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 480px) {
     .logo {
-        width: 70%;
+        width: 100%;
         padding-bottom: 20px;
     }
 
@@ -38,6 +38,6 @@
 
     .coming_soon {
         padding-top: 20px;
-        font-size: 0.8rem;
+        font-size: 0.95rem;
     }
 }
