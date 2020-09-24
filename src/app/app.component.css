@@ -1,7 +1,6 @@
 .logo {
     height: auto;
-    width: 50%;
-    padding-bottom: 50px;
+    width: 40%;
 }
 
 .container {
@@ -33,6 +32,7 @@
     transition: .4s;
     text-decoration: none;
     font-size: 1rem;
+    font-family: 'Muli', sans-serif;
 }
 
 @media screen and (max-width: 480px) {
