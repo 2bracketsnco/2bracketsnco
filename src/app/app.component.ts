@@ -7,6 +7,8 @@ import {
 } from "@angular/core";
 import { Location } from "@angular/common";
 import { DOCUMENT } from "@angular/common";
+import { Router, NavigationEnd} from '@angular/router'; 
+
 
 @Component({
   selector: "app-root",
@@ -15,10 +17,19 @@ import { DOCUMENT } from "@angular/common";
 })
 export class AppComponent implements OnInit {
   constructor(
+    private router: Router,
     private renderer: Renderer2,
     public location: Location,
     @Inject(DOCUMENT) document
-  ) {}
+  ) {
+        //subscribes every changes of your route
+      this.router.events.subscribe((event) => {
+        if (event instanceof NavigationEnd){
+          //scroll to top
+          window.scrollTo(0,0);
+        }
+    });
+  }
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(e) {
     if (window.pageYOffset > 100) {
