@@ -11,7 +11,8 @@ const routes: Routes = [
   // { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "", component: IndexComponent },
   { path: "aboutus", component: RegisterpageComponent },
-  { path: "ourservices", component: LandingpageComponent }
+  { path: "ourservices", component: LandingpageComponent },
+  { path: "**", redirectTo: "", pathMatch: "full" }
 ];
 
 @NgModule({
