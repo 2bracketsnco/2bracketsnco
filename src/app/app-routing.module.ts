@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: "", component: IndexComponent },
   { path: "aboutus", component: RegisterpageComponent },
   { path: "ourservices", component: LandingpageComponent },
-  { path: "**", redirectTo: "", pathMatch: "full" }
+  { path: "**", redirectTo: "", pathMatch: "full" },
+  { path: "404", redirectTo: "", pathMatch: "full" }
 ];
 
 @NgModule({
